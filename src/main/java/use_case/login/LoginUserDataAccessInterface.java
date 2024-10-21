@@ -27,5 +27,15 @@ public interface LoginUserDataAccessInterface {
      */
     User get(String username);
 
+    /**
+     * Set the user name.
+     * @param name the username to look for
+     */
     void setCurrentUser(String name);
+
+    /**
+     * Checks if the given username exists.
+     * @return string
+     */
+    String getCurrentUser();
 }
